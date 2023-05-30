@@ -30,7 +30,7 @@ export default class GameCtrl extends cc.Component {
 
   onLoad() {
     this.initListener();
-
+    cc.director.getPhysicsManager().enabled = true;
     this.results.resetScore();
 
     cc.director.pause();
