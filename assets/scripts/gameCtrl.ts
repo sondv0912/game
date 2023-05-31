@@ -72,6 +72,10 @@ export default class GameCtrl extends cc.Component {
     this.startGame();
   }
 
+  passPipe() {
+    this.results.addScore();
+  }
+
   startGame() {
     this.results.hideResults();
     cc.director.resume();
